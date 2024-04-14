@@ -14,3 +14,7 @@ def random_point(radius):
 
 def test_random_point_x(random_point, radius):
     assert abs(random_point.get_x()) <= radius
+
+
+def test_random_point_y(random_point, radius):
+    assert abs(random_point.get_y()) <= radius
