@@ -15,7 +15,7 @@ if __name__ == "__main__":
     points = [point.random_point(args.radius) for _ in range(args.npoints)]
     points_in_circle = [p for p in points if p.in_circle(args.radius)]
 
-    print('{} total points of which {} are in circle (ratio {}).'.format(
+    print('{} total points of which {} are in circle (pi {}).'.format(
             len(points),
             len(points_in_circle),
             (len(points_in_circle)*4)/len(points)))
